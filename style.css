@@ -1,0 +1,714 @@
+/*********************** DEBUT ************************************** GENERAL ******************************************* DEBUT *******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/************************************************************** HEADER **************************************************************/
+
+
+a { 
+    color:  black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#FA4A0C;
+}
+
+.left a:active {
+    color: #FA4A0C;
+}
+
+ul {
+    font-family: 'Montserrat';
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 64px;
+    height: 48px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 71px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+.navbar {
+
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 156px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+
+}
+
+.navbar .left {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.right, .left {
+
+    flex-basis: calc(20.33% - 99px);
+    margin: 5px;
+
+}
+
+
+.desktop_menu {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 90px;
+
+width: 100%;
+height: 48px;
+
+}
+
+
+.Food_app {
+
+    width: 100%;
+    height: 619px;
+    background-image: url(images/en_haut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.title_food_app {
+    padding-top: 50px;
+}
+
+.title_food_app {
+    padding-top: 50px;
+}
+
+.title_food_app h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 50px;
+}
+
+.title_food_app{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+/************************************************************** HEADER **************************************************************/
+
+/******************** FIN ************************************** GENERAL ******************************************* FIN ****************/
+
+
+
+.pizza_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 79px;
+}
+
+
+.b_card {
+    flex-basis: calc(20.33% - 99px);
+    border: 3px solid #FA4A0C;
+    padding: 15px;
+    margin: 10px;
+}
+
+.pizza_img {
+    padding: 10px 10px 0 10px;
+}
+
+.button {
+width: 100px;
+height: 40px;
+color: white;
+background: #FA4A0C;
+border-radius: 30px;
+outline: none;
+float: right;
+transition-duration: 0.4s;
+}
+
+button:hover, .button:hover {
+    border: 1px solid #FA4A0C;
+    color: #FA4A0C;
+    background-color: white;
+}
+
+.d_pizza, .p_pizza {
+font-family: 'Montserrat';
+padding-left: 10px;
+}
+
+
+.nos_pizza, .nos_burger, .nos_salade {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.8;
+    text-align: center;
+
+}
+
+.burger_container, .salade_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.problem_solved_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.problem_solved {
+    font-family: 'Montserrat';
+    width: 820px;
+    height: 400px;
+    font-size: 24px;
+    line-height: 46.5px;
+    padding-top: 171px;
+    padding-left: 5%;
+}
+
+.bonne_appetit {
+    width: 100%;
+    height: 516px;
+    background-image: url(images/en_bas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bonneapp {
+    font-family: 'Montserrat';
+    color: white;
+    padding-top: 250px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+}
+
+
+.footer {
+    padding: 0 115px 54px 115px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_logo {
+    padding-top: 17px;
+    flex-basis: calc(20.33% - 99px);
+}
+
+.social {
+    padding-top: 46px;
+}
+
+.copy {
+    flex-basis: calc(33.33 - 20px);
+    margin: 10px;
+    padding-top: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+input {
+    width: 320px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    padding-left: 20px;
+    margin-top: 10px;
+
+
+}
+
+label {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.vos_info {
+font-size: 44px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+
+}
+
+.supp_fromage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66rem;
+}
+
+.vos_information {
+  
+  margin-top: 10px;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-top: 56px;
+  padding-left: 110px;
+  font-family: 'Montserrat';
+}
+.info_left {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.Fromage {
+    width: 320px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    padding-left: 12px;
+}
+
+.info_right, .info_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30rem;
+    width: 100%;
+}
+
+.commande_right, .commande_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10rem;
+    width: 100%;
+}
+
+
+.avec, .sans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+
+.sans_f {
+    padding-top: 39px;
+    padding-left: 50px;
+}
+.avec_f {
+    padding-left: 10px;
+}
+
+.boissons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 31rem;
+    padding-top: 5px;
+}
+
+.carre {
+    width: 24px;
+    height: 24px;
+    background-color: green;
+}
+
+.carre.grey {
+    background-color: #C4C4C4;
+}
+
+.all {
+    display: flex;
+}
+
+.content_of_dessert {
+    margin-left: 186px;
+}
+
+hr {
+    margin-top: 70px;
+    width: 15rem;
+    padding: 0 25%;
+    border: 1px solid #E4E4E4;
+
+}
+
+.adresse_de_livraison {
+    display: flex;
+    justify-content: space-between;
+    width: 70rem;
+    padding-left: 0;
+}
+label.livraison {
+    margin-top: 48px;
+}
+
+button {
+    text-decoration: none;
+    width: 177px;
+    height: 68px;
+    background: #FA4A0C;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+
+}
+
+.send {
+    padding-top: 181px;
+    padding-bottom: 113px;
+    width: 76rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nous_contacter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+
+.Nc {
+font-size: 44px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+
+}
+
+.up {
+
+transition-duration: 0.4s;
+font-family: 'Montserrat';
+height: 47px;
+width: 143px;
+padding: 10px 16px;
+background: #FA4A0C;
+border-radius: 4px;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 1.25px;
+text-align: center;
+
+}
+
+.two_of_them {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.captcha {
+    padding-top: 40px;
+}
+
+#option-select {
+
+    width: 990px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+.Objet {
+    width: 1010px;
+}
+
+textarea#story {
+    width: 990px; 
+    height: 238px; 
+    margin-top: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    align-content: center;
+    overflow: auto;
+}
+
+.Message, .carte {
+    margin-top: 30px;
+}
+
+button
+ { 
+  text-transform: none;
+  border: 0;
+  box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+  border-radius: 30px;
+}
+
+.test {width: 95%;}
+
+
+
+/*********************************************** MEDIA QUERY ******************************************************/
+/******************************************** SEULEMENT  MOBILE ******************************************************/
+/******************************************** Choisir Iphone XR ******************************************************/
+
+
+@media all and (max-width: 794px) {
+    .navbar {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navbar .right {
+        display: none;
+    
+    }
+  }
+
+@media all and (max-width: 500px) {
+    .navbar {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+      }
+      .navbar .right {
+          display: none;
+      
+      }
+    .vos_information {
+        /* padding-left: 110px; */
+        width: 67%;
+        padding-left: 45px;
+        gap: 0px;
+    }
+    .send {
+        /* padding-top: 181px; */
+        padding-top: 131px;
+        /* width: 76rem; */
+        width: 15rem;
+    }
+    .nous_contacter {
+        flex-direction: column;
+        width: 88%;
+        height: 180%;
+    }
+    .two_of_them {
+        /* width: 300px; */
+        width: 90%;
+    }
+    #option-select {
+        /* width: 990px; */
+        width: 100%;
+    }
+    .Objet {
+        /* width: 1010px; */
+        width: 100%;
+    }
+    .vos_information {
+        padding-left: 70px;
+    }
+    textarea#story {
+        /* width: 990px; */
+        width: 115%;
+    }
+    .two_of_them {
+        /* padding-top: 50px; */
+        padding-top: -1%;
+        margin: 0;
+        width: 107%;
+    }
+    iframe {
+        width: 305px;
+        height: 500px;
+    }
+    input {
+        /* width: 90%; */
+        width: 94%;
+    }
+    .supp_fromage {
+        /* align-items: flex-start; */
+        /* width: 66rem; */
+        width: 26rem;
+        align-items: flex-start;
+    }
+    .adresse_de_livraison {
+        /* width: 70rem; */
+        width: 20rem;
+        flex-direction: column;
+    }
+    .send {
+        /* width: 15rem; */
+        width: 15rem;
+    }
+    .boissons {
+        /* width: 31rem; */
+        width: 24rem;
+      }
+    .all {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .Fromage {
+        /* width: 320px; */
+        width: 59%;
+    }
+    .info_right, .info_left {
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* gap: 30rem; */
+        gap: 0rem;
+    }
+    .commande_right, .commande_left {
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* gap: 10rem; */
+        gap: 1rem;
+    }
+    label {
+            /* flex-direction: column; */
+        flex-direction: column;
+    }
+    .supp_fromage {
+        flex-direction: column;
+    }
+    .avec_sans {
+        padding-top: 12%;
+      }
+    .content_of_boisson {
+        padding-top: 10%;
+    }
+    .content_of_dessert {
+        /* margin-left: 186px; */
+        margin-left: 2%;
+      }
+
+    .test {
+        width: 66%;
+    }
+
+    .b_card {
+        /* flex-basis: calc(20.33% - 99px); */
+        /* flex-basis: calc(20.33% - 99px); */
+        /* padding: 15px; */
+        /* margin: 10px; */
+        padding: 15px 0;
+        margin: 10px 0;
+    }
+    .problem_solved {
+        /* padding-top: 171px; */
+        /* padding-left: 5%; */
+        padding-top: 8px;
+        padding-bottom: 2em;
+        padding-left: 2%;
+      }
+
+    .footer {
+        /* justify-content: space-between; */
+        justify-content: center;
+      }
+
+    .copy {
+        /* margin: 10px; */
+        /* margin: 10px; */
+        padding-left: 3em;
+      }
+    hr {
+        /* width: 15rem; */
+        width: 10rem;
+      }
+    .button {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .div_button {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+      
+}
+
+
+/*********************************************** MEDIA QUERY ******************************************************/
+/******************************************** SEULEMENT  MOBILE ******************************************************/
