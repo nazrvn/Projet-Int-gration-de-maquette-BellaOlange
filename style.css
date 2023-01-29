@@ -4,7 +4,6 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
 }
 
@@ -22,10 +21,6 @@ a {
 
 a:hover {
     color:#FA4A0C;
-}
-
-.left a:active {
-    color: #FA4A0C;
 }
 
 ul {
@@ -401,9 +396,6 @@ text-align: left;
 }
 
 hr {
-    margin-top: 70px;
-    width: 15rem;
-    padding: 0 25%;
     border: 1px solid #E4E4E4;
 
 }
@@ -509,6 +501,9 @@ textarea#story {
     align-content: center;
     overflow: auto;
 }
+.carte {
+    width: 124%;
+}
 
 .Message, .carte {
     margin-top: 30px;
@@ -527,8 +522,6 @@ button
 
 
 /*********************************************** MEDIA QUERY ******************************************************/
-/******************************************** SEULEMENT  MOBILE ******************************************************/
-/******************************************** Choisir Iphone XR ******************************************************/
 
 
 @media all and (max-width: 794px) {
@@ -543,27 +536,48 @@ button
     }
   }
 
-@media all and (max-width: 500px) {
+
+
+@media all and (max-width: 414px) {
+    header {
+        width: 94%;
+    }
     .navbar {
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         padding: 0;
-      }
-      .navbar .right {
+    }
+    .navbar .right {
           display: none;
       
-      }
+    }
+    header {
+        /* width: 94%; */
+        width: 100%;
+    }
     .vos_information {
         /* padding-left: 110px; */
         width: 67%;
-        padding-left: 45px;
+        padding-left: 25px;
         gap: 0px;
+    }
+    .all_content.vos_information {
+        width: 80%;
+    }
+    .carte {
+        width: 100%;
     }
     .send {
         /* padding-top: 181px; */
-        padding-top: 131px;
-        /* width: 76rem; */
-        width: 15rem;
+        width: 78%;
+    }
+    .millieu {
+        /* width: 54%; */
+        width: 100%;
+    }
+    .Food_app {
+        /* width: 100%; */
+        width: 100%;
     }
     .nous_contacter {
         flex-direction: column;
@@ -572,7 +586,8 @@ button
     }
     .two_of_them {
         /* width: 300px; */
-        width: 90%;
+        width: 94%;
+        padding-top: 25%;
     }
     #option-select {
         /* width: 990px; */
@@ -582,26 +597,18 @@ button
         /* width: 1010px; */
         width: 100%;
     }
-    .vos_information {
-        padding-left: 70px;
-    }
+
     textarea#story {
         /* width: 990px; */
-        width: 115%;
-    }
-    .two_of_them {
-        /* padding-top: 50px; */
-        padding-top: -1%;
-        margin: 0;
-        width: 107%;
-    }
-    iframe {
-        width: 305px;
-        height: 500px;
+        width: 99%;
     }
     input {
         /* width: 90%; */
         width: 94%;
+    }
+    .vos_info {
+        /* font-size: 44px; */
+        font-size: 36px;
     }
     .supp_fromage {
         /* align-items: flex-start; */
@@ -614,17 +621,14 @@ button
         width: 20rem;
         flex-direction: column;
     }
-    .send {
-        /* width: 15rem; */
-        width: 15rem;
-    }
     .boissons {
         /* width: 31rem; */
-        width: 24rem;
+        width: 100%;
       }
     .all {
         flex-direction: column;
         align-items: baseline;
+        width: 100%;
     }
     .Fromage {
         /* width: 320px; */
@@ -645,6 +649,8 @@ button
     label {
             /* flex-direction: column; */
         flex-direction: column;
+        width: 108%;
+        margin-left: 12px;
     }
     .supp_fromage {
         flex-direction: column;
@@ -654,11 +660,13 @@ button
       }
     .content_of_boisson {
         padding-top: 10%;
+        width: 100%;
     }
     .content_of_dessert {
         /* margin-left: 186px; */
         margin-left: 2%;
-      }
+        width: 100%;
+    }
 
     .test {
         width: 66%;
@@ -690,10 +698,6 @@ button
         /* margin: 10px; */
         padding-left: 3em;
       }
-    hr {
-        /* width: 15rem; */
-        width: 10rem;
-      }
     .button {
         display: flex;
         align-content: center;
@@ -701,14 +705,105 @@ button
         align-items: center;
         justify-content: center;
       }
-      .div_button {
+    .div_button {
         display: flex;
         justify-content: space-evenly;
       }
       
-      
 }
 
 
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    header {
+        width: 100%;
+    }
+    html, body {
+        /* height: 100%; */
+        /* height: 100%; */
+        height: 0%;
+    }
+    .navbar {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+      }
+    .navbar .right {
+        display: none;
+      }
+    .navbar {
+        /* width: 100%; */
+        width: 100%;
+    }
+    
+    /*************************************** CONTACT *********************************************/
+
+    input {
+        /* width: 320px; */
+        width: 100%;
+    }
+    .vos_information {
+        /* padding-left: 110px; */
+        padding-left: 11%;
+        width: 75%;
+    }
+    .nous_contacter {
+        flex-direction: column;
+        width: 100%;
+    }
+    .two_of_them {
+        /* padding-top: 50px; */
+        padding-top: 90%;
+    }
+    #option-select {
+        /* width: 990px; */
+        width: 100%;
+    }
+    textarea#story {
+        /* width: 990px; */
+        width: 99%;
+    }
+    label#objet {
+        width: 11%;
+    }
+    label#message {
+        width: 17%;
+    }
+    .carte {
+        width: 100%;
+    }
+    .Food_app {
+        /* width: 100%; */
+        width: 100%;
+    }
+    .send {
+        /* width: 76rem; */
+        width: 41rem;
+    }
+    .captcha {
+        width: 38%;
+    }
+    .bottom {
+        width: 100%;
+    }
+    .millieu {
+        width: 54%;
+    }
+    .contact.droite {
+        width: 94%;
+    }
+    .contact.gauche {
+        width: 94%;
+    }
+    .Objet {
+        /* width: 1010px; */
+        width: 100%;
+    }
+    #envoyer {
+        width: 78%;
+    }
+    /*************************************** CONTACT *********************************************/
+
+
+}
+
 /*********************************************** MEDIA QUERY ******************************************************/
-/******************************************** SEULEMENT  MOBILE ******************************************************/
